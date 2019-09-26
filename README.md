@@ -1,3 +1,6 @@
+\*\*\* View "Mockups in Detail.pdf" file for mockups
+and more detail about project.
+
 App OUtline:
 
     - Making a clone of twitch.tv where user can
