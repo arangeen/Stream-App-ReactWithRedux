@@ -25,3 +25,5 @@ const App = () => {
 };
 
 export default App;
+
+// next goal is to handle all authentication with react
