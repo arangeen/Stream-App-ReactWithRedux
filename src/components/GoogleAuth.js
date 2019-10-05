@@ -1,4 +1,6 @@
 import React from "react";
+import { connect } from "react-redux";
+import { signIn, signOut } from "../actions";
 
 // OAuth flow based Authentication
 class GoogleAuth extends React.Component {
@@ -26,7 +28,12 @@ class GoogleAuth extends React.Component {
   }
 
   //getting Authentication status
-  onAuthChange = () => {
+  onAuthChange = isSignedIn => {
+    // if (isSignedIn === true) {
+    //   this.props.signIn();
+    // } else {
+    //   this.props.signOut();
+    // }
     this.setState({ isSignedIn: this.auth.isSignedIn.get() });
   };
 
@@ -64,4 +71,7 @@ class GoogleAuth extends React.Component {
   }
 }
 
-export default GoogleAuth;
+export default connect(
+  null,
+  { signIn, signOut }
+)(GoogleAuth);
