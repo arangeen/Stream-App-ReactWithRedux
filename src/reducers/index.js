@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
+import authReducer from "./authReducer";
 
-// just to have a reducer for now so app can run
 export default combineReducers({
-  replaceMe: () => "gfgrg"
+  auth: authReducer
 });
