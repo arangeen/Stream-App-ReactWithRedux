@@ -1,3 +1,5 @@
+import streams from "../apis/streams";
+
 export const signIn = () => {
   return {
     type: "SIGN_IN"
@@ -10,4 +12,8 @@ export const signOut = () => {
   };
 };
 
-//action creators
+//more action creators
+
+export const createStream = formValues => async dispatch => {
+  streams.post("/streams", formValues);
+};
