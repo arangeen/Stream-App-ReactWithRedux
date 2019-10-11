@@ -68,5 +68,4 @@ export default reduxForm({
   validate
 })(StreamCreate);
 
-// handling forms with Redux Form done.
-// time to work on REST-BASED REACT APPS
+// starting on REST-Based React Apps
