@@ -1,4 +1,5 @@
 import streams from "../apis/streams";
+import history from "../history";
 import {
   FETCH_STREAMS,
   FETCH_STREAM,
@@ -29,6 +30,7 @@ export const createStream = formValues => async (dispatch, getState) => {
 
   // do some programmtic navigation to
   // get the user back to the root route (shows list of streams)
+  history.push("/");
 };
 
 export const fetchStreams = () => async dispatch => {
